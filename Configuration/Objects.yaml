@@ -1,0 +1,2 @@
+Neos\Flow\Mvc\Routing\RouterInterface:
+  className: WebSupply\RouteAnnotation\Mvc\Routing\Router
