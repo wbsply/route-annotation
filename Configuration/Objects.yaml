@@ -1,2 +1,7 @@
 Neos\Flow\Mvc\Routing\RouterInterface:
   className: WebSupply\RouteAnnotation\Mvc\Routing\Router
+
+Neos\Flow\Command\RoutingCommandController:
+  properties:
+    router:
+      object: WebSupply\RouteAnnotation\Mvc\Routing\Router
