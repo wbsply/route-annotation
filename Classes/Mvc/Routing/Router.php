@@ -44,7 +44,7 @@ final class Router extends \Neos\Flow\Mvc\Routing\Router
             $methodNames = $reflectionService->getMethodsAnnotatedWith($controllerClassName, Route::class);
             foreach ($methodNames as $methodName) {
                 if (preg_match('/.*Action$/', $methodName) === 0 || $reflectionService->isMethodPublic($controllerClassName, $methodName) === false) {
-                    throw new AnnotationException(sprintf('The method %s->%s is annotated with @Dafis\Route. The Route annotation is only meant for *Action methods in your controller', $controllerClassName, $methodName));
+                    throw new AnnotationException(sprintf('The method %s->%s is annotated with "Route". The "Route" annotation is only meant for *Action methods in your controller', $controllerClassName, $methodName));
                 }
                 $controllerObjectName = $objectManager->getCaseSensitiveObjectName($controllerClassName);
 
