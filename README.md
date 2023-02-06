@@ -1,9 +1,13 @@
 # Annotations based routing for Neos Flow
 
-More your routing configuration into the controller with the a `Route` annotation
+Move your routing configuration into the controller with the a `Route` annotation
 
-## Examples
+## Install
 
+`composer require websupply/route-annotation`
+
+## Example
+Configuring a controller as follows
 ```php
 use WebSupply\RouteAnnotation\Annotations as WebSupply;
 
@@ -24,7 +28,7 @@ class RouteAnnotatedController extends ActionController
 }
 ```
 
-gives you the following routes
+Gives you the following routes
 ```
 $ ./flow routing:list
 Currently registered routes:
